@@ -39,7 +39,7 @@ npm install -g nodemon
 Fazer o clone do repositório
 
 ```
-git clone https://github.com/rodrigo93sj/node-rest-api
+git clone https://github.com/danilodanilo1/apiNodeMongo.git
 ```
 
 Instalar os pacotes
