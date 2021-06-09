@@ -4,6 +4,7 @@ module.exports = app => {
   app.post('/auth/forgot_password', app.app.controllers.user.forgotPassword)
   app.post('/auth/reset_password', app.app.controllers.user.resetPassword)
 
+
   app.route('/user')
     .all(app.app.middlewares.authToken.authenticationJWT)
     .get(app.app.controllers.user.userProfile)
@@ -18,4 +19,15 @@ module.exports = app => {
     .get(app.app.controllers.project.getProjectById)
     .delete(app.app.controllers.project.removeProject)
     .put(app.app.controllers.project.updateProject)
+
+  app.route('/employees')
+  .all(app.app.middlewares.authToken.authenticationJWT)
+  .post(app.app.controllers.employees.createEmployee)
+  .get(app.app.controllers.employees.getEmployee)
+
+  app.route('/employees/:employeeId')
+  .all(app.app.middlewares.authToken.authenticationJWT)
+  .get(app.app.controllers.employees.getEmployeeById)
+  .delete(app.app.controllers.employees.removeEmployee)
+  .put(app.app.controllers.employees.updateEmployees)
 }
