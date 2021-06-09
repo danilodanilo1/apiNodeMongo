@@ -99,7 +99,7 @@ Crie e utilize a rota ```http://localhost:4000/auth/reset_password``` com métod
 
 ```
 {
-	"email": "rodrigoengj@gmail.com",
+	"email": "teste@gmail.com",
 	"token": "e08e7172c1c439f74721920cb8ea702924a6c283",
 	"password": "hudson19937416"
 }
