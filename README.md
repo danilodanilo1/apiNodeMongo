@@ -155,6 +155,10 @@ Crie e utilize a rota ```http://localhost:4000/projects/projectId``` com método
 
 Crie e utilize a rota ```http://localhost:4000/projects/projectId``` com método **GET**. Será necessário copiar o id de um projeto e substituir em **projectId**.
 
+## Créditos
+
+rodrigo93sj
+
 ## Licença
 
 [Mit](http://escolhaumalicenca.com.br/licencas/mit/)
