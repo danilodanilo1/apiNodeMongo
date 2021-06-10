@@ -1,13 +1,13 @@
 module.exports = app => {
 
     const { Employees } = app.app.models.Employees
-    // const test = () => {
+    const test = () => {
 
-    //   console.log('teste' , Employees );
-    // }
+      console.log('teste' , Employees );
+    }
     // create a new Employee
     const createEmployee = async (req, res) => {
-      // test()
+      test()
       try {
         const { name, email, start, position, salary, description  } = req.body
         
@@ -15,7 +15,7 @@ module.exports = app => {
 
         await employees.save()
         
-        return res.send({employee})
+        return res.send({employees})
       } catch(err) {
         return res.status(400).send({ error: 'Error creating new employee.'})
       }
